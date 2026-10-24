@@ -1,0 +1,56 @@
+# E-commerce Data Engineering Pipeline using PySpark
+
+## Project Overview
+This project demonstrates a local data engineering workflow using Python and PySpark. It processes e-commerce orders, customer information, and product data to create a cleaned sales dataset and business reports.
+
+## Dataset
+The practice dataset contains three CSV files:
+- `orders.csv` — order details
+- `customers.csv` — customer information
+- `products.csv` — product details
+
+The dataset contains synthetic sample data for learning and demonstration.
+
+## Tech Stack
+- Python
+- PySpark
+- Spark SQL
+- Pandas
+- Jupyter Notebook
+- CSV and Parquet concepts
+
+## Key Work
+- Loaded and explored CSV datasets using PySpark DataFrames.
+- Checked data quality, including duplicate orders, invalid quantities, and unmatched customer or product IDs.
+- Cleaned and transformed data.
+- Joined orders with customer and product information.
+- Calculated order-level revenue using quantity × product price.
+- Practiced Spark SQL queries, aggregations, and window functions.
+- Generated monthly revenue summaries.
+- Practiced pivoting, unpivoting, and Spark partition optimization.
+- Worked on exporting processed data to CSV.
+
+## Project Status
+The local PySpark processing workflow is under development. AWS S3, Apache Airflow, SQL Server, and Power BI integrations are planned next and are not yet completed.
+
+## How to Run
+1. Install Python and Java compatible with your PySpark version.
+2. Install dependencies:
+   `pip install pyspark pandas jupyter`
+3. Open the Jupyter Notebook.
+4. Update the CSV file paths to match your local dataset folder.
+5. Run the notebook cells in order.
+
+Note: On Windows, Spark file-writing operations may require a compatible Hadoop `winutils.exe` setup. The CSV export workaround using `toPandas()` is suitable only for small datasets that fit in memory.
+
+## Learning Objective
+To practice core data engineering concepts, including data ingestion, data quality checks, ETL transformations, SQL analytics, and exporting processed data.
+
+## Future Enhancements
+- Store raw and processed data in AWS S3.
+- Orchestrate the pipeline using Apache Airflow.
+- Load processed data into SQL Server.
+- Build a Power BI dashboard.
+
+## Author
+Atul Upadhyay
